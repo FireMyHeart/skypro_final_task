@@ -3,47 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Обучающий портал компании</title>
-    <link rel="stylesheet" href="css/index.css">
-    <style>
-        .container {
-         width: 1500px;
-         height: 400px;
-         background-image: linear-gradient(to right, #E2BCBB, #E4514A);
-         }
-         .col-1-2 {
-         width: 50%;
-         }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <a href="jpg/logo.jpg" class="logo">Обучающий портал компании</a>
-    <nav>
-      <ul>
+  <div class="header">
+    <div class="logo"><a href="index.html"><img src="jpg/logo.jpg" alt="лого" width="75px"></a></div>
+    <div class="zag"><h1>Обучающий портал компании</h1></div>
+    <div class="links">
+        <ul class="navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="cmd.html">Командная строка Win</a></li>
           <li><a href="macOS.html">Терминал Mac</a></li>
           <li><a href="git.html">Команды Git</a></li>
-      </ul>
-    </nav>
-  </div>
-<div class="main">
-  <div class="container">
-    <div class="col-1-2">
-           <p><a href="index.html"><img src="jpg/logo.jpg" width="50" height="50" border="0"></a></p>
-    </div>
-    <div class="col-2-2">
-           <p><a href="cmd.html"><img src="jpg/git.jpg" width="50" height="50" border="0"></a></p>
-    </div>
-    <div class="col-1-2">
-           <p><a href="macOS.html"><img src="jpg/mac.jpg" width="50" height="50" border="0"></a></p>
-    </div>
-    <div class="col-2-2">
-           <p><a href="git.html"><img src="jpg/win.jpg" width="50" height="50" border="0"></a></p>
+          <li><a href="cicd.html">CI/CD</a></li>
+          <li><a href="docker.html">Docker</a></li>
+        </ul>
     </div>
   </div>
-</div>
-<footer>
-</footer>
+  <div class="main">
+    <ul>
+      <li><a href="cmd.html"><h2><img src="jpg/win.jpg" alt="win" width="75px">Командная строка Win</h2></a></li>
+      <li><a href="macOS.html"><h2><img src="jpg/mac.jpg" alt="mac" width="75px">Терминал Mac</h2></a></li>
+      <li><a href="git.html"><h2><img src="jpg/git.jpg" alt="git" width="75px">Команды Git</h2></a></li>
+      <li><a href="cicd.html"><h2><img src="jpg/cicd.jpg" alt="git" width="75px">CI/CD</h2></a></li>
+      <li><a href="docker.html"><h2><img src="jpg/docker.jpg" alt="git" width="75px">Docker</h2></a></li>
+    </ul>
+  </div>
 </body>
 </html>
