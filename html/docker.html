@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Docker</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><a href="index.html"><img src="jpg/logo.jpg" alt="лого" width="75px"></a></div>
+        <div class="zag"><h1>Обучающий портал компании</h1></div>
+        <div class="links">
+            <ul class="navigation">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="cmd.html">Командная строка Win</a></li>
+              <li><a href="macOS.html">Терминал Mac</a></li>
+              <li><a href="git.html">Команды Git</a></li>
+              <li><a href="cicd.html">CI/CD</a></li>
+              <li><a href="docker.html">Docker</a></li>
+            </ul>
+        </div>
+      </div>
+    <div class="main">
+        <h2>Docker</h2>
+        <p><span class="bold">Docker</span> — это открытая платформа для автоматизации развертывания, доставки и управления приложениями в контейнерах. Она позволяет упаковать приложение со всеми его зависимостями в единый контейнер, который может быть развернут на любой поддерживаемой операционной системе.</p>
+        <ul>
+            <li>
+                <p><span class="bold">Docker image (образ)</span> — это файл, который содержит всё необходимое для запуска приложения или сервиса, включая код программы, зависимости, настройки и окружение. Образы можно использовать для создания и запуска контейнеров.</p>
+                <p><span class="bold">Docker container (контейнер)</span> — это экземпляр, или «экземпляр выполнения», Docker image. Он представляет собой окружение, в котором запускается приложение из Docker image.</p> 
+                <p>Образно говоря, <span class="bold">Docker image (образ)</span> — это рецепт, по которому готовится блюдо. <span class="bold">Docker container (контейнер)</span> — это само приготовленное блюдо, которое может быть размещено на столе и съедено.</p></li>
+            <li><span class="bold">Docker Hub</span> — это реестр готовых докер-образов. Можно загружать свои для совместной работы, можно скачивать образы, сделанные другими. Аналог GitHub, но для Docker-образов.</li>
+        </ul>
+        <h2>Основные команды Docker:</h2>
+        <ul>
+            <li><span class="comand">docker pull &#60;image_name&#62;</span> — загрузка докер-образа (Docker image)</li>
+            <li><span class="comand">docker images</span> — просмотр загруженных образов</li>
+            <li><span class="comand">docker run -dp &#60;port&#62; &#60;image_name&#62;</span> — запуск контейнера</li>
+            <li><span class="comand">docker ps</span> — просмотр списка запущенных контейнеров (Docker container)</li>
+            <li><span class="comand">docker stop &#60;container id&#62;</span> — остановка контейнера</li>
+            <li><span class="comand">docker restart  &#60;container id&#62;</span> — перезапуск контейнера</li>
+            <li><span class="comand">docker rm  &#60;container id&#62;</span> — удаление контейнера</li>
+            <li><span class="comand">docker image rm —force &#60;image id&#62;</span> — удаление образа</li>
+        </ul>
+    </div>
+</body>
+</html>
